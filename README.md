@@ -2,18 +2,6 @@ Pacman vs Ghosts — AI vs AI (A*/GBFS + Minimax + Fuzzy Logic)
 
 An AI-driven Pacman game where Pacman and two Ghosts battle using a hybrid of fuzzy logic, A*/GBFS pathfinding, and minimax with alpha–beta pruning. Built with Python and Pygame.
 
-> Run fullscreen, watch the AIs duel, or tweak parameters to change behaviors. Great for learning game AI patterns.
-
-
-UI Preview
-
-![UI Preview](docs/ui.png)
-
-Add a gameplay GIF if you like:
-
-```
-docs/demo.gif  ← optional gameplay capture
-```
 
 
 Table of Contents
@@ -128,8 +116,8 @@ Sequence Diagram (Game Loop)
 sequenceDiagram
     participant Loop as Game.run()
     participant Pac as PacmanAgent
-    participant Ghost0 as GhostAgent[0]
-    participant Ghost1 as GhostAgent[1]
+    participant Ghost0 as GhostAgent0
+    participant Ghost1 as GhostAgent1
     participant R as Renderer
 
     Loop->>Pac: choose_action(state)
